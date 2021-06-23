@@ -1,5 +1,5 @@
-# Welcome to GitHub Desktop!
+# Вёрстка моего сайта-портфолио-визитки Nevovich-web
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
+Эту вёрстку я буду производить на устройстве, которое не столь мощно, как хотелось бы
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+ФАйловая структура будет разработана заново, потому что от предыдущих проектов у меня не осталось исходников

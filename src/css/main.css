@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/regular/lato-regular.eot");
+  src: url("../fonts/lato/bold/lato-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/regular/lato-regular.woff2") format("woff2"), url("../fonts/lato/regular/lato-regular.woff") format("woff"), url("../fonts/lato/regular/lato-regular.ttf") format("truetype");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/bold/lato-bold.eot");
+  src: url("../fonts/lato/bold/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/bold/lato-bold.woff2") format("woff2"), url("../fonts/lato/bold/lato-bold.woff") format("woff"), url("../fonts/lato/bold/lato-bold.ttf") format("truetype");
+  font-display: swap;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/gilroy/extrabold/gilroy-extrabold.eot");
+  src: url("../fonts/gilroy/extrabold/gilroy-extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy/extrabold/gilroy-extrabold.woff2") format("woff2"), url("../fonts/gilroy/extrabold/gilroy-extrabold.woff") format("woff"), url("../fonts/gilroy/extrabold/gilroy-extrabold.ttf") format("truetype");
+  font-display: swap;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/gilroy/regular/gilroy-regular.eot");
+  src: url("../fonts/gilroy/regular/gilroy-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy/regular/gilroy-regular.woff2") format("woff2"), url("../fonts/gilroy/regular/gilroy-regular.woff") format("woff"), url("../fonts/gilroy/regular/gilroy-regular.ttf") format("truetype");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+/*# sourceMappingURL=main.css.map */

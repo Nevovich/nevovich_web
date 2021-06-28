@@ -1,0 +1,28 @@
+header
+    background-color: $primarylight
+.header
+    padding: 20px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &-title
+        font-size: 25px
+        line-height: 31px
+    &__nav
+        max-width: 540px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        &-link
+            font-family: 'Gilroy'
+            font-size: 18px
+            line-height: 21px
+            text-decoration: none !important
+@media (max-width: 960px)
+    .header
+        &__nav
+            display: none
+@media (max-width: 560px)
+    .header
+        &-button
+            display: none

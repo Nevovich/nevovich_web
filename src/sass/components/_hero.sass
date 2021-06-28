@@ -1,0 +1,59 @@
+.hero
+    padding-top: 80px
+    padding-bottom: 40px
+    max-width: 539px
+    width: 100%
+    z-index: -1
+    // &::before
+        // position: absolute
+        // width: 1129px
+        // height: 530px
+        // content: "#"
+        // background-color: white
+        // transform: rotate(-70deg)
+        // opacity: 80%
+        // z-index: -2
+
+        // background-image: url(../img/hero/hero-bg.png)
+    &-bg
+        // background-image: url(../img/hero/hero-bg.jpg)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+    &-title
+        font-size: 34px
+        line-height: 42px
+    &-subtitle
+        text-decoration: underline
+        text-decoration-color: $secondarydark
+        text-decoration-thickness: 2px
+        margin-bottom: 30px
+    &-list
+        padding: 0
+        &__item
+            margin-bottom: 26px
+            display: flex
+            align-items: center
+            list-style-type: none
+            &-icon
+                display: table
+                padding: 13px
+                border-radius: 50%
+                border: 2px solid $primary
+            &-text
+                color: black
+                font-size: 16px
+                line-height: 19px
+                margin-left: 30px
+@media (max-width: 560px)
+    .hero
+        padding-top: 30px
+        &-title
+            font-size: 32px
+            line-height: 35px
+        &-subtitle
+            margin-bottom: 20px
+        &-list
+            &__item
+                &-text
+                    margin-left: 15px

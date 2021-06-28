@@ -1,0 +1,34 @@
+.skills
+    margin-top: 75px
+    &-title
+        margin-bottom: 39px
+    &-block
+        display: flex
+        justify-content: space-between
+        margin-bottom: 30px
+    &-list
+        display: flex
+        justify-content: space-between
+        &__item
+            box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.25)
+            border-radius: 8px
+            width: 255px
+            height: 106px
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-right: 30px
+@media (max-width: 1120px)
+    .skills
+        &-list
+            justify-content: center
+            flex-wrap: wrap
+@media (max-width: 560px)
+    .skills
+        &-block
+            justify-content: center
+            flex-wrap: wrap
+            margin-bottom: 0px
+        &-list
+            &__item
+                margin-bottom: 30px

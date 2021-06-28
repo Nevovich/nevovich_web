@@ -33,4 +33,21 @@
   font-weight: normal;
   font-style: normal;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gilroy';
+  font-weight: bold;
+}
+
+p, span, li {
+  font-family: 'Lato';
+}
+
+a {
+  font-family: 'Lato';
+  color: #303030;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #320b86;
+          text-decoration-color: #320b86;
+}
 /*# sourceMappingURL=main.css.map */

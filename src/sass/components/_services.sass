@@ -1,0 +1,84 @@
+.services
+    display: flex
+    align-items: center
+    background-color: $gray
+    &-c
+        margin-top: 75px
+    &-img
+        width: 50%
+    &-block
+        max-width: 550px
+        margin-left: 110px
+        &-b
+            text-align: right
+            max-width: 550px
+            margin-right: 110px
+    &-title
+        margin-bottom: 30px
+    &-text
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 30px
+    &-b
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        background-color: $gray
+@media (max-width: 1500px)
+    .services
+        &-block
+        &-title
+            font-size: 20px 
+            margin-bottom: 15px
+        &-text
+            font-size: 16px
+            line-height: 20px
+            margin-bottom: 15px
+        &-price
+            font-size: 20px
+@media (max-width: 1279px)
+    .services
+        text-align: center
+        flex-direction: column
+        &-b
+            flex-direction: column-reverse
+        &-img
+            width: 100%
+        &-block
+            margin-left: 0
+            margin-top: 50px
+            margin-bottom: 50px
+            &-b
+                margin-right: 0
+                text-align: center
+                margin-top: 50px
+                margin-bottom: 50px
+        &-title
+            font-size: 25px
+            margin-bottom: 30px
+        &-price
+            font-size: 25px
+        &-text
+            font-size: 20px
+            line-height: 24px
+            margin-bottom: 30px
+@media (max-width: 768px)
+    .services
+        &-block
+            width: 95%
+            &-b
+                width: 95%
+        &-title
+            font-size: 20px
+            margin-bottom: 15px
+        &-text
+            font-size: 18px
+            margin-bottom: 15px
+        &-price
+            font-size: 20px
+@media (max-width: 540px)
+    .services
+        &-block
+            margin: 20px 0
+            &-b
+                margin: 20px 0

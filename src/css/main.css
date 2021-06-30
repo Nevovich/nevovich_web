@@ -51,6 +51,14 @@ a {
           text-decoration-color: #320b86;
   -webkit-text-decoration-style: 2px;
           text-decoration-style: 2px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #9a67ea;
+  -webkit-text-decoration-color: #9a67ea;
+          text-decoration-color: #9a67ea;
 }
 
 h5 {

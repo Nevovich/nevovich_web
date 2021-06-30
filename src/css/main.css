@@ -582,6 +582,7 @@ header {
   border-radius: 15px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  margin-right: 30px;
 }
 
 .projects__list-item:hover {
@@ -622,6 +623,12 @@ header {
   }
   .projects__list-item {
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 680px) {
+  .projects__list-item {
+    margin-right: 0px;
   }
 }
 

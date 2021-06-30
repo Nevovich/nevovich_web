@@ -1,0 +1,40 @@
+.footer
+    margin-top: 100px
+    padding: 10px 0px
+    display: flex
+    justify-content: space-between
+    align-items: baseline
+    &-section
+        background-color: $secondarydark
+    &-copy
+        color: white
+        font-size: 16px
+        line-height: 19px
+    &-nav
+        max-width: 454px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        &__link
+            font-family: 'Open Sans' sans-serif !important
+            font-weight: 100
+            font-size: 18px
+            line-height: 21px
+            color: $primarylight
+            text-decoration: none !important
+            &:hover
+                color: $primary
+    &-contact
+        text-decoration: none
+        max-width: 120px
+        width: 100%
+        display: flex
+        justify-content: space-between
+@media (max-width: 960px)
+    .footer
+        flex-direction: column
+        &-copy
+        &-nav
+            flex-direction: column
+            &__link
+                margin-bottom: 15px 

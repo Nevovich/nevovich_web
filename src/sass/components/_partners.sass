@@ -1,0 +1,58 @@
+.partners
+    padding-top: 38px
+    padding-bottom: 96px
+    &-section
+        background-color: $gray
+    &-title
+        text-align: center
+    &-block
+        display: flex
+        justify-content: space-between
+        &-img
+            border-radius: 8px
+            max-width: 445px
+            width: 100%
+    &-container
+        margin-left: 29px
+        max-width: 636px
+        &__subtitle
+            max-width: 530px
+            color: $black
+            font-size: 20px
+            line-height: 29px
+        &-list
+            display: flex
+            flex-direction: column
+            justify-content: center
+            list-style-type: none
+            padding: 0
+            &__item
+                display: flex
+                align-items: center
+                margin-bottom: 25px
+                &-counter
+                    display: flex
+                    background-color: white
+                    display: table
+                    border: 3px solid $primary
+                    border-radius: 50%
+                    padding: 20px 30px
+                    margin-right: 25px
+                    font-size: 50px
+                    line-height: 61px
+                    &__title
+                        color: #000 !important
+                        margin-bottom: 0px
+        &__text
+            font-size: 18px
+            line-height: 24px
+            margin-bottom: 20px
+        &__button
+            padding: 10px 20px
+@media (max-width: 960px)
+    .partners
+        &-block
+            flex-direction: column-reverse
+            align-items: center
+        &-container
+            margin-bottom: 40px

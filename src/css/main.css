@@ -624,4 +624,113 @@ header {
     margin-bottom: 40px;
   }
 }
+
+.partners {
+  padding-top: 38px;
+  padding-bottom: 96px;
+}
+
+.partners-section {
+  background-color: #eee;
+}
+
+.partners-title {
+  text-align: center;
+}
+
+.partners-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.partners-block-img {
+  border-radius: 8px;
+  max-width: 445px;
+  width: 100%;
+}
+
+.partners-container {
+  margin-left: 29px;
+  max-width: 636px;
+}
+
+.partners-container__subtitle {
+  max-width: 530px;
+  color: #303030;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.partners-container-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.partners-container-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.partners-container-list__item-counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  display: table;
+  border: 3px solid #ffb300;
+  border-radius: 50%;
+  padding: 20px 30px;
+  margin-right: 25px;
+  font-size: 50px;
+  line-height: 61px;
+}
+
+.partners-container-list__item-counter__title {
+  color: #000 !important;
+  margin-bottom: 0px;
+}
+
+.partners-container__text {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.partners-container__button {
+  padding: 10px 20px;
+}
+
+@media (max-width: 960px) {
+  .partners-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .partners-container {
+    margin-bottom: 40px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

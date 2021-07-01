@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- <link rel="preload" href="fonts/gilroy/extrabold/gilroy-extrabold.woff2" as="font">
+    <link rel="preload" href="fonts/gilroy/regular/gilroy-regular.woff2" as="font">
+    <link rel="preload" href="fonts/lato/bold/lato-bold.woff2" as="font">
+    <link rel="preload" href="fonts/lato/regular/lato-regular.woff2" as="font"> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
     <title>NevovichWeb - веб-разработка сайтов под ключ</title>
 </head>
 <body>
@@ -14,6 +18,7 @@
             <div class="header">
                 <h4 class="header-title">Nevovich web</h4>
                 <div class="header__nav">
+                    <!-- лучше сделать класс .header-nav__link -->
                     <a href="#" class="header__nav-link">Услуги</a>
                     <a href="#" class="header__nav-link">Портфолио</a>
                     <a href="#" class="header__nav-link">Партнёрская программа</a>
@@ -49,8 +54,11 @@
     <section>
         <div class="container">
             <div class="skills">
+                <!-- Делаешь просто здесь класс h3.section-title у всех заголовков всех секций, всё -->
                 <h3 class="skills-title">Профессиональные навыки</h3>
+                <!-- Вот тут крч делаешь див .row -->
                 <div class="skills-list">
+                    <!--  и каждый .skills-list__item накидываешь туда классы по типу .col-12 .col-md-4 и так далее (сделал для примера, классы именно эти могут быть нерабочими или неправильными) -->
                     <div class="skills-block">
                         <div class="skills-list__item"><img src="img/skills/wp.png" alt=""></div>
                         <div class="skills-list__item"><img src="img/skills/wp.png" alt=""></div>
@@ -234,6 +242,7 @@
                     </div>
                     <div class="contacts-card">
                         <div class="contacts-wrap">
+                            <!-- на врап накидываешь при уменьшении экрана tac -->
                             <h2 class="contacts-card__title">Хочу сайт по выгодной цене</h2>
                             <p class="contacts-card__subtitle">Заполните поля ниже - мы свяжемся с Вами</p>
                             <form action="#" class="contacts-card-form">

@@ -1,5 +1,6 @@
 .contacts
-    margin-top: 40px
+    &-section
+        padding-bottom: 0px !important
     &-title
         color: $black !important
     &-container
@@ -81,10 +82,10 @@ input:focus~.focus-border
 @media (max-width: 1120px)
     .contacts
         &-container
-            flex-direction: column-reverse
+            flex-direction: column
         &-block
-            margin-top: 40px
             display: flex
+            margin-bottom: 20px
             &__item
                 margin-right: 20px
                 &:last-child
@@ -97,3 +98,5 @@ input:focus~.focus-border
     .contacts
         &-block
             display: block
+        &-wrap
+            text-align: center

@@ -1,2 +1,29 @@
-// самая главная подсказка - псевдоэлементы
-    // P.S. круглешок или тоже должен быть псевдо, ибо если он будет на вёрстке, то вёрстка будет ломаться
+.modal
+    &-body
+        display: flex
+        align-items: baseline
+        justify-content: space-around
+        &::after
+            content: url(../img/modal/or.png)
+            position: absolute
+            top: -43px
+    &-content
+        padding: 43px
+        border-radius: 15px
+    &-card
+        max-width: 355px
+        box-shadow: none
+    &__title
+        text-align: center
+        font-size: 25px
+        line-height: 37px !important
+        margin-bottom: 50px
+    &-block
+        max-width: 398px
+    &-btn
+        margin-top: 10px
+        padding: 4px 16px  
+        &__text
+            font-size: 16px
+            line-height: 22px
+            margin-bottom: 0px

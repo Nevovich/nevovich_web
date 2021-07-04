@@ -20,6 +20,7 @@
             line-height: 22px
             margin-bottom: 0px
 .order-modal
+    position: relative
     display: flex
     align-items: baseline
     justify-content: space-around
@@ -33,3 +34,32 @@
         margin-left: auto
         margin-right: auto
         max-width: 322px !important
+@media (max-width: 1200px)
+    .order-modal
+        &::after
+            content: url(../img/modal/or-mob.png)
+            top: 367px
+            max-width: 100%
+            left: -17px
+    .modal
+        &-block
+            margin-bottom: 50px
+@media (max-width: 991px)
+    .order-modal
+        &::after
+            content: url(../img/modal/or-mob-sm.png)
+@media (max-width: 768px)
+    .order-modal
+        &::after
+            content: url(../img/modal/or-mob-sm.png)
+            top: 400px
+@media (max-width: 576px)
+    .order-modal
+        &::after
+            content: ''
+    .modal
+        &-block
+            margin: 0px
+        &-card
+            &-wrap
+                padding: 0

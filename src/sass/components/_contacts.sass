@@ -55,49 +55,46 @@ input:focus~.focus-border
     width: 100%
     transition: 0.5s
 // -----------------------------------------
-.contacts-card form .contacts-card-form__input .focus-border:focus
+.contacts-form .contacts-form__input .focus-border:focus
     width: 100%
     transition: 0.4s
-.contacts-card form .contacts-card-form__input input
+.contacts-form .contacts-form__input input
     width: 100%
     background: transparent
     border: none
     border-bottom: 2px solid $primarydark
     box-sizing: border-box
     margin-bottom: 20px
-.contacts-card form .contacts-card-form__input input:focus ~ label
+.contacts-form .contacts-form__input input:focus ~ label
     top: -20px
     font-size: 14px
-.contacts-card form .contacts-card-form__input input:focus
+.contacts-form .contacts-form__input input:focus
     outline: 0
-.contacts-card-form__input
+.contacts-form__input
     position: relative
-.contacts-card form .contacts-card-form__input label
+.contacts-form .contacts-form__input label
     transition: 0.3s
     position: absolute
     top: 2px
     left: 0
     pointer-events: none
-
-@media (max-width: 1120px)
+@media (max-width: 1200px)
+    .card-img
+        display: none
+    .contacts
+        &-block
+        &-wrap
+            text-align: center
+@media (max-width: 768px)
     .contacts
         &-container
             flex-direction: column-reverse
-            // отступ настроишь, доверяю это важное и ответственное дело тебе, полагаясь на твой изысканный вкус
         &-block
-            display: flex
-            margin-bottom: 20px
+            margin-top: 40px
             &__item
                 margin-right: 20px
                 &:last-child
                     margin-right: 0px
                 &-info
                     margin-left: 15px
-@media (max-width: 768px)
-    .card-img
-        display: none
-    .contacts
-        &-block
-            display: block
-        &-wrap
-            text-align: center
+

@@ -208,7 +208,7 @@
                             </li>
                         </ul>
                         <p class="partners-container__text">В случае успешного выполнения заказа вам на E-mail придёт сообщение об успешной операции и запросе о платёжных данных, по которым мы переведем вам деньги</p>
-                        <button class="btn secondary-btn partners-container__button">Заполнить форму</button>
+                        <button class="btn secondary-btn partners-container__button" data-toggle="modal" data-target="#partners-modal">Заполнить форму</button>
                     </div>
                 </div>
             </div>
@@ -292,7 +292,7 @@
     <div class="modal fade" id="order-modal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-body row">
+                <div class="modal-body order-modal row">
                     <div class="contacts-block modal-block col-xl-6">
                         <h3 class="modal__title">Контактная информация</h3>
                         <div class="contacts-block__item modal-block__item">
@@ -319,7 +319,7 @@
                     </div>
                     <div class="contacts-card modal-card col-xl-6">
                         <div class="contacts-wrap">
-                            <h2 class="contacts-card__title modal__title">Оставьте заявку, Мы с вами свяжемся</h2>
+                            <h3 class="contacts-card__title modal__title">Оставьте заявку, Мы с вами свяжемся</h3>
                             <p class="contacts-card__subtitle"></p>
                             <form action="#" class="contacts-form">
                                 <div class="contacts-form__input">
@@ -346,12 +346,50 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
+    <div class="modal fade" id="partners-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog partners-modal modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body partners-modal-body">
+                    <h3 class="modal__title">Информация о реферале</h3>
+                    <form action="#" class="contacts-form">
+                        <div class="contacts-form__input">
+                            <input type="text">
+                            <label for="#">Имя реферала</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="contacts-form__input">
+                            <input type="text">
+                            <label for="#">Id в telegram</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="contacts-form__input">
+                            <input type="text">
+                            <label for="#">E-mail реферала (необязательно)</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="contacts-form__input">
+                            <input type="text">
+                            <label for="#">Ориентировочный заказ</label>
+                            <span class="focus-border"></span>
+                        </div>
+                    </form>
+                    <h3 class="modal__title">Информация о партнёре</h3>
+                    <form action="#" class="contacts-form">
+                        <div class="contacts-form__input">
+                            <input type="text">
+                            <label for="#">Ваше имя</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="contacts-form__input">
+                            <input type="text">
+                            <label for="#">E-mail</label>
+                            <span class="focus-border"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

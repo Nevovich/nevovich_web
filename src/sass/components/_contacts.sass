@@ -43,10 +43,9 @@
         border-radius: 8px
 .focus-border
     color: $primary
-// ----------------------------------------
 input ~ .focus-border
     position: absolute
-    bottom: 20px
+    bottom: 25px
     left: 0
     width: 0
     height: 2px
@@ -55,7 +54,6 @@ input ~ .focus-border
 input:focus~.focus-border
     width: 100%
     transition: 0.5s
-// -----------------------------------------
 .contacts-form .contacts-form__input .focus-border:focus
     width: 100%
     transition: 0.4s
@@ -65,7 +63,7 @@ input:focus~.focus-border
     border: none
     border-bottom: 2px solid $primarydark
     box-sizing: border-box
-    margin-bottom: 20px
+    margin-bottom: 25px
 .contacts-form .contacts-form__input input:focus ~ label
     top: -20px
     font-size: 14px

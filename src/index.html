@@ -17,7 +17,7 @@
         <div class="container">
             <div class="header">
                 <a href="index.html" class="header-title">Nevovich web</a>
-                <div class="header__nav">
+                <div class="header-nav">
                     <a href="#services-section" class="header-nav__link">Услуги</a>
                     <a href="#projects-section" class="header-nav__link">Портфолио</a>
                     <a href="#partners-section" class="header-nav__link">Партнёрская программа</a>
@@ -88,8 +88,8 @@
             </div>
         </div>
         <div class="container-fluid">
-            <div class="services-b">
-                <div class="services-block-b">
+            <div class="services-mirrored">
+                <div class="services-block-mirrored">
                     <h5 class="services-title">Лендинг “Под ключ”</h5>
                     <p class="services-text">Лендинг (англ. landing page, также «посадочная страница») - веб-страница, основной задачей которой является сбор контактных данных целевой аудитории. Используется для усиления эффективности рекламы, увеличения аудитории. Комплексно подходим к задаче, от этапа идеи до реализации и размещения в интернете. </p>
                     <h5 class="services-price">от 6990 рублей</h5>
@@ -110,10 +110,8 @@
             </div>
         </div>
         <div class="container-fluid">
-            <div class="services-b">
-
-                <!-- чё такое b?? меняй классы -->
-                <div class="services-block-b">
+            <div class="services-mirrored">
+                <div class="services-block-mirrored">
                     <h5 class="services-title">Порталы</h5>
                     <p class="services-text">Ресурсы, на которых можно размещать информацию различного характера. Более продвинутый функционал, чем у многостраничного сайта Агенства недвижимости, новостные сервисы и даже сайты объявлений - это всё порталы</p>
                     <h5 class="services-price">от 36990 рублей</h5>
@@ -126,22 +124,22 @@
         <div class="container">
             <div class="steps">
                 <h3 class="steps-title">Как происходит сотрудничество</h3>
-                <div class="steps__list">
-                    <div class="steps__list-item">
-                        <div class="steps__list-item-img"><img src="img/steps/comment.svg" alt=""></div>
-                        <p class="steps__list-item-text">Оставляете заявку на сайте или пишите нам</p>
+                <div class="steps-list">
+                    <div class="steps-list__item">
+                        <div class="steps-list__item-img"><img src="img/steps/comment.svg" alt=""></div>
+                        <p class="steps-list__item-text">Оставляете заявку на сайте или пишите нам</p>
                     </div>
-                    <div class="steps__list-item">
-                        <div class="steps__list-item-img"><img src="img/steps/clock.svg" alt=""></div>
-                        <p class="steps__list-item-text">Оцениваем проект и сроки</p>
+                    <div class="steps-list__item">
+                        <div class="steps-list__item-img"><img src="img/steps/clock.svg" alt=""></div>
+                        <p class="steps-list__item-text">Оцениваем проект и сроки</p>
                     </div>
-                    <div class="steps__list-item">
-                        <div class="steps__list-item-img"><img src="img/steps/dollar.svg" alt=""></div>
-                        <p class="steps__list-item-text">Вы делаете предоплату, и мы приступаем к работе</p>
+                    <div class="steps-list__item">
+                        <div class="steps-list__item-img"><img src="img/steps/dollar.svg" alt=""></div>
+                        <p class="steps-list__item-text">Вы делаете предоплату, и мы приступаем к работе</p>
                     </div>
-                    <div class="steps__list-item">
-                        <div class="steps__list-item-img"><img src="img/steps/work-item.svg" alt=""></div>
-                        <p class="steps__list-item-text">Выполняем работу, вы проверяете и проводите остаток оплаты</p>
+                    <div class="steps-list__item">
+                        <div class="steps-list__item-img"><img src="img/steps/work-item.svg" alt=""></div>
+                        <p class="steps-list__item-text">Выполняем работу, вы проверяете и проводите остаток оплаты</p>
                     </div>
                 </div>
             </div>
@@ -151,30 +149,29 @@
         <div class="container">
             <div class="projects">
                 <h3 class="projects-title">Наши проекты</h3>
-                <div class="projects__list">
-                    <div href="#" class="projects__list-item">
-                        <img src="img/projects/sorokina-psy.png" alt="" class="projects__list-item-img">
-                        <div class="projects__list-item-block">
-                            <h6 class="projects__list-item-title">Сайт психолога</h6>
-                            <p class="projects__list-item-text">Мышление представляет собой концептуальный конформизм, таким образом, (описание проекта) выгодная отдельному человеку, ведет к коллективному выигрышу.</p>
-                            <a href="https://sorokina-psy.ru" class="projects__list-item-link">Ссылка на сайт</a>
+                <div class="projects-list">
+                    <div href="#" class="projects-list__item">
+                        <img src="img/projects/sorokina-psy.png" alt="" class="projects-list__item-img">
+                        <div class="projects-list__item-block">
+                            <h6 class="projects-list__item-title">Сайт психолога</h6>
+                            <p class="projects-list__item-text">Мышление представляет собой концептуальный конформизм, таким образом, (описание проекта) выгодная отдельному человеку, ведет к коллективному выигрышу.</p>
+                            <a href="https://sorokina-psy.ru" class="projects-list__item-link">Ссылка на сайт</a>
                         </div>
                     </div>
-                    <div href="#" class="projects__list-item">
-                        <img src="img/projects/hata-repair.png" alt="" class="projects__list-item-img">
-                        <div class="projects__list-item-block">
-                            <!-- укорачивай класс -->
-                            <h6 class="projects__list-item-title">Сайт психолога</h6>
-                            <p class="projects__list-item-text">Мышление представляет собой концептуальный конформизм, таким образом, (описание проекта) выгодная отдельному человеку, ведет к коллективному выигрышу.</p>
-                            <a href="#" class="projects__list-item-link">Ссылка на сайт</a>
+                    <div href="#" class="projects-list__item">
+                        <img src="img/projects/hata-repair.png" alt="" class="projects-list__item-img">
+                        <div class="projects-list__item-block">
+                            <h6 class="projects-list__item-title">Сайт психолога</h6>
+                            <p class="projects-list__item-text">Мышление представляет собой концептуальный конформизм, таким образом, (описание проекта) выгодная отдельному человеку, ведет к коллективному выигрышу.</p>
+                            <a href="#" class="projects-list__item-link">Ссылка на сайт</a>
                         </div>
                     </div>
-                    <div href="#" class="projects__list-item">
-                        <img src="img/projects/papa-carlo.png" alt="" class="projects__list-item-img">
-                        <div class="projects__list-item-block">
-                            <h6 class="projects__list-item-title">Сайт психолога</h6>
-                            <p class="projects__list-item-text">Мышление представляет собой концептуальный конформизм, таким образом, (описание проекта) выгодная отдельному человеку, ведет к коллективному выигрышу.</p>
-                            <a href="#" class="projects__list-item-link">Ссылка на сайт</a>
+                    <div href="#" class="projects-list__item">
+                        <img src="img/projects/papa-carlo.png" alt="" class="projects-list__item-img">
+                        <div class="projects-list__item-block">
+                            <h6 class="projects-list__item-title">Сайт психолога</h6>
+                            <p class="projects-list__item-text">Мышление представляет собой концептуальный конформизм, таким образом, (описание проекта) выгодная отдельному человеку, ведет к коллективному выигрышу.</p>
+                            <a href="#" class="projects-list__item-link">Ссылка на сайт</a>
                         </div>
                     </div>
                 </div>
@@ -279,7 +276,6 @@
                 <p class="footer-copy">©Nevovich web 2019-2021</p>
                 <div class="footer-nav">
                     <a href="politics.html" class="footer-nav__link">Политика конфиденциальности</a>
-                    <!-- пришлю тебе в телегу документ, надо будет чето с этим придумать, либо как с сорокина-пси, либо просто пусть документ скачивается, либо онлайн просматривается -->
                     <a href="#" class="footer-nav__link">Оферта об услугах</a>
                 </div>
                 <div class="footer-contact">
@@ -291,29 +287,31 @@
     </footer>
     <div class="modal fade" id="order-modal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-body order-modal row">
+            <div class="modal-content order-modal">
+                <div class="modal-body order-modal-body row">
                     <div class="contacts-block modal-block col-xl-6">
                         <h3 class="modal__title">Контактная информация</h3>
-                        <div class="contacts-block__item modal-block__item">
-                            <img src="img/contacts/tg.svg" alt="">
-                            <div class="contacts-block__item-info">
-                                <h4 class="contacts-block__item-info-title">Telegram</h4>
-                                <a href="https://t.me/nevovich_web">https://t.me/nevovich_web</a>
+                        <div class="modal-block">
+                            <div class="contacts-block__item modal-block__item">
+                                <img src="img/contacts/tg.svg" alt="">
+                                <div class="contacts-block__item-info">
+                                    <h4 class="contacts-block__item-info-title">Telegram</h4>
+                                    <a href="https://t.me/nevovich_web">https://t.me/nevovich_web</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contacts-block__item modal-block__item">
-                            <img src="img/contacts/phone.svg" alt="">
-                            <div class="contacts-block__item-info">
-                                <h4 class="contacts-block__item-info-title">Позвоните мне</h4>
-                                <a href="tel:+7 (904) 886-55-52">+7 (904) 886-55-52</a>
+                            <div class="contacts-block__item modal-block__item">
+                                <img src="img/contacts/phone.svg" alt="">
+                                <div class="contacts-block__item-info">
+                                    <h4 class="contacts-block__item-info-title">Позвоните мне</h4>
+                                    <a href="tel:+7 (904) 886-55-52">+7 (904) 886-55-52</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contacts-block__item modal-block__item">
-                            <img src="img/contacts/mail.svg" alt="">
-                            <div class="contacts-block__item-info">
-                                <h4 class="contacts-block__item-info-title">Напишите на почту</h4>
-                                <a href="mailto:mail@nevovichweb.ru">mail@nevovichweb.ru</a>
+                            <div class="contacts-block__item modal-block__item">
+                                <img src="img/contacts/mail.svg" alt="">
+                                <div class="contacts-block__item-info">
+                                    <h4 class="contacts-block__item-info-title">Напишите на почту</h4>
+                                    <a href="mailto:mail@nevovichweb.ru">mail@nevovichweb.ru</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -373,7 +371,7 @@
                             <span class="focus-border"></span>
                         </div>
                     </form>
-                    <h3 class="modal__title">Информация о партнёре</h3>
+                    <h3 class="modal__title contacts-form__title">Информация о партнёре</h3>
                     <form action="#" class="contacts-form">
                         <div class="contacts-form__input">
                             <input type="text">
@@ -385,11 +383,30 @@
                             <label for="#">E-mail</label>
                             <span class="focus-border"></span>
                         </div>
+                        <button class="btn secondary-btn contacts-form-button modal-btn d-flex">Отправить</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <form id="form-contact" method="POST" class="contact-form" autocomplete="off" enctype="multipart/form-data">
+        <p class="contact-form__title">Закажите обратный звонок и наш консультант свяжется с вами</p>
+        <p class="contact-form__message"></p>
+        <div class="contact-form__input-wrapper contact-form__input-wrapper_name">
+          <input name="name" type="text" class="contact-form__input contact-form__input_name" tabindex="0" placeholder="Введите ваше имя">
+        </div>
+        <div class="contact-form__input-wrapper contact-form__input-wrapper_phone">
+          <input name="phone" type="tel" class="contact-form__input contact-form__input_phone" tabindex="0" placeholder="Введите ваш телефон">
+        </div>
+        <div class="contact-form__input-wrapper">
+          <input type="file" name="file" id="contact-form__input_file" class="contact-form__input contact-form__input_file">
+          <label for="contact-form__input_file" class="contact-form__file-button">
+             <span class="contact-form__file-text">Выберите файл</span>
+          </label>
+        </div>
+        <input name="theme" type="hidden" class="contact-form__input contact-form__input_theme"  value="Заявка с сайта">
+        <button type="submit" class="contact-form__button">Отправить</button>
+     </form>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>

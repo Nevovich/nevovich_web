@@ -18,35 +18,37 @@
             color: $black
             font-size: 20px
             line-height: 29px
-        &-list
-            display: flex
-            flex-direction: column
-            justify-content: center
-            list-style-type: none
-            padding: 0
-            &__item
-                display: flex
-                align-items: center
-                margin-bottom: 25px
-                &-counter
-                    background-color: $white
-                    display: table
-                    border: 3px solid $primary
-                    border-radius: 50%
-                    width: 90px
-                    height: 90px
-                    margin-right: 25px
-                    padding: 22px 30px
-                    &__title
-                        font-size: 50px
-                        color: $realblack
-                        margin-bottom: 0px
         &__text
             font-size: 18px
             line-height: 24px
             margin-bottom: 20px
         &__button
             padding: 10px 20px
+    &-list
+        display: flex
+        flex-direction: column
+        justify-content: center
+        list-style-type: none
+        padding: 0
+        &__item
+            display: flex
+            align-items: center
+            margin-bottom: 25px
+            &-counter
+                background-color: $white
+                border: 3px solid $primary
+                border-radius: 50%
+                width: 90px
+                height: 90px
+                margin-right: 25px
+                &__num
+                    font-family: "Gilroy"
+                    font-weight: bold
+                    font-size: 50px
+                    color: $realblack
+
+                        
+    
 @media (max-width: 1200px)
     .partners
         &-block

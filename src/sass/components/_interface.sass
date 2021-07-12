@@ -7,6 +7,18 @@ $secondarydark: #320b86
 $black: #303030
 $gray: #eee
 $white: #fff
+$realblack: #000
+
+
+
+// ещё подумай, как ввести в переменные тени: там везде чёрный с разной резкостью, предлагаю два варианта:
+$darkshadow: rgba(0,0,0,0.25)
+$lightshadow: rgba(0,0,0,0.12)
+// если есть ещё какие-то тени, меняй их нахуй на эти две, чтоб не было разнобоя
+
+body
+    background-color: $white
+
 h1, h2, h3, h4, h5, h6
     font-family: 'Gilroy'
     font-weight: bold
@@ -47,11 +59,11 @@ h3
     -moz-box-shadow:    1px 2px 10px 0px rgba(50, 50, 50, 0.3)
     box-shadow:         1px 2px 10px 0px rgba(50, 50, 50, 0.3)
     &:hover
-        background-color: white
+        background-color: $white
         color: $black
 .secondary-btn
     background-color: $secondary
-    color: white
+    color: $white
     font-weight: bold
     font-family: 'Gilroy'
     font-size: 18px
@@ -62,7 +74,7 @@ h3
     -moz-box-shadow:    1px 2px 10px 0px rgba(50, 50, 50, 0.3)
     box-shadow:         1px 2px 10px 0px rgba(50, 50, 50, 0.3)
     &:hover
-        background-color: white
+        background-color: $white
         color: $secondary
 @media (max-width: 768px)
     h3

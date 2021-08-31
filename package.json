@@ -1,0 +1,26 @@
+{
+  "name": "nevovich_web",
+  "version": "1.0.0",
+  "description": "Эту вёрстку я буду производить на устройстве, которое не столь мощно, как хотелось бы",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nevovich/nevovich_web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nevovich/nevovich_web/issues"
+  },
+  "homepage": "https://github.com/Nevovich/nevovich_web#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-tinypng-compress": "^1.2.5",
+    "uglify-js": "^3.14.1",
+    "gulp-uglify": "^3.0.2"
+  }
+}

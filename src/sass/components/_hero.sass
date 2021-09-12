@@ -1,19 +1,30 @@
 .hero
-    max-width: 539px
+    // max-width: 539px
     width: 100%
     z-index: -1
-    &-bg
-        background-repeat: no-repeat
-        background-position: center
-        background-size: cover
+    display: flex
+    justify-content: space-between
+    align-items: center
+    // &-bg
+    //     background-repeat: no-repeat
+    //     background-position: center
+    //     background-size: cover
     &-title
-        font-size: 34px
-        line-height: 42px
-    &-subtitle
-        text-decoration: underline
-        text-decoration-color: $secondarydark
-        text-decoration-thickness: 2px
-        margin-bottom: 30px
+        font-size: 78px
+        line-height: 100%
+    &-btn
+        padding: 19px 56px
+        color: $primarylight
+        background-color: $black
+        margin-top: 75px
+        &:hover
+            color: $white
+            background-color: $secondarydark
+    // &-subtitle
+    //     text-decoration: underline
+    //     text-decoration-color: $secondarydark
+    //     text-decoration-thickness: 2px
+    //     margin-bottom: 30px
     &-list
         padding: 0
         &__item
@@ -35,11 +46,73 @@
     .hero
         padding-top: 30px
         &-title
-            font-size: 32px
-            line-height: 35px
-        &-subtitle
-            margin-bottom: 20px
+            font-size: 42px
+        &-img
+            width: 100%
+            margin-top: -8rem
+        &-btn
+            padding: 10px 30px
         &-list
             &__item
                 &-text
                     margin-left: 15px
+.advantage
+    &:not(:last-child)
+        border-right: 1px solid rgba($black, 0.2)
+        margin-right: 45px
+    &-title
+        font-weight: bold
+        font-size: 22px
+        font-family: 'Gilroy'
+    &-text
+        margin-top: 20px
+        min-width: 350px
+    &s
+        &-inner
+            display: flex
+            justify-content: space-between
+            align-items: center
+            // flex-wrap: wrap
+        &-section
+            background-color: $gray
+            padding: 64px 0
+
+@media (max-width: 1200px)
+    .advantage
+        &:not(:last-child)
+            margin-right: 25px
+        &-text
+            min-width: 0px
+@media (max-width: 973px)
+    .advantage
+        &:not(:last-child)
+            margin-right: 15px
+@media (max-width: 750px)
+    .advantage
+        max-width: 400px
+        &-text
+            margin-top: 11px
+        &s-inner
+            flex-direction: column
+            align-items: center
+            text-align: center
+        &:not(:last-child)
+            margin-right: 0
+            border-right: 0
+            border-bottom: 1px solid rgba($black, 0.2)
+            margin-bottom: 20px
+@media (max-width: 1090px)
+    .hero
+        &-title
+            font-size: 52px
+@media (max-width: 400px)
+    .hero
+        &-title
+            font-size: 32px
+@media (max-width: 970px)
+    .hero
+        flex-direction: column-reverse
+        &-img
+            margin-bottom: 60px
+        &-btn
+            margin-top: 40px

@@ -17,44 +17,72 @@
     <header>
         <div class="container">
             <div class="header">
-                <a href="/" class="header-title">Nevovich web</a>
-                <div class="header-nav">
-                    <a href="#services-section" class="header-nav__link">Услуги</a>
-                    <a href="#projects-section" class="header-nav__link">Портфолио</a>
-                    <a href="#partners-section" class="header-nav__link">Партнёрская программа</a>
-                    <a href="#contacts-section" class="header-nav__link">Контакты</a>
-                </div>
-                <button class="btn header-button secondary-btn" data-toggle="modal" data-target="#order-modal">Заказать сайт</button>
+                <nav class="navbar navbar-expand-lg justify-content-between">
+                    <a href="/" class="header-title">nevovich<span>web</span></a>
+                    <button id="header-navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <img style="height: 30px;width:30px;" src="img/menu-icon.svg" alt="menu-icon">
+                    </button>
+                        <div class="collapse navbar-collapse" id="headerNavbar">
+                            <div class="header-nav">
+                                <a href="#services-section" class="header-nav__link">Услуги</a>
+                                <a href="#projects-section" class="header-nav__link">Портфолио</a>
+                                <a href="#partners-section" class="header-nav__link">Партнёрская программа</a>
+                                <a href="#contacts-section" class="header-nav__link">Контакты</a>
+                            </div>
+                            <button class="btn header-button secondary-btn" data-toggle="modal" data-target="#order-modal">Заказать сайт</button>
+                        </div>
+                </nav>
             </div>
         </div>
     </header>
     <section class="hero-bg">
         <div class="container">
             <div class="hero">
-                <h2 class="hero-title">Сайты - это быстро, выгодно и универсально</h2>
-                <p class="hero-subtitle">Индивидуальный подход к каждому заказчику</p>
-                <ul class="hero-list">
-                    <li class="hero-list__item">
-                        <span class="hero-list__item-icon"><img src="img/hero/dollar.svg" alt=""></span>
-                        <span class="hero-list__item-text">Расценки на услуги в среднем ниже, чем у других веб-студий нашего уровня</span>
-                    </li>
-                    <li class="hero-list__item">
-                        <span class="hero-list__item-icon"><img src="img/hero/clock.svg" alt=""></span>
-                        <span class="hero-list__item-text">Мы стараемся устанавливать оптимальные для наших заказчиков сроки выполнения</span>
-                    </li>
-                    <li class="hero-list__item">
-                        <span class="hero-list__item-icon"><img src="img/hero/quality.svg" alt=""></span>
-                        <span class="hero-list__item-text">Опыт в сфере веб-разработки составляет несколько лет</span>
-                    </li>
-                </ul>
-                <button class="btn hero-button primary-btn" data-toggle="modal" data-target="#order-modal">Оставить заявку</button>
+                <div class="hero-text">
+                    <h2 class="hero-title">Сайты - это быстро, выгодно и универсально</h2>
+                    <!-- <p class="hero-subtitle">Индивидуальный подход к каждому заказчику</p> -->
+                    <!-- <ul class="hero-list">
+                        <li class="hero-list__item">
+                            <span class="hero-list__item-icon"><img src="img/hero/dollar.svg" alt=""></span>
+                            <span class="hero-list__item-text">Расценки на услуги в среднем ниже, чем у других веб-студий нашего уровня</span>
+                        </li>
+                        <li class="hero-list__item">
+                            <span class="hero-list__item-icon"><img src="img/hero/clock.svg" alt=""></span>
+                            <span class="hero-list__item-text">Мы стараемся устанавливать оптимальные для наших заказчиков сроки выполнения</span>
+                        </li>
+                        <li class="hero-list__item">
+                            <span class="hero-list__item-icon"><img src="img/hero/quality.svg" alt=""></span>
+                            <span class="hero-list__item-text">Опыт в сфере веб-разработки составляет несколько лет</span>
+                        </li>
+                    </ul> -->
+                    <button class="btn hero-btn primary-btn" data-toggle="modal" data-target="#order-modal">Оставить заявку</button>
+                </div>
+                <img src="img/hero/hero-img.svg" alt="hero img" class="hero-img">
+            </div>
+        </div>
+    </section>
+    <section class="advantages-section">
+        <div class="container">
+            <div class="advantages-inner">
+                <div class="advantage">
+                    <span class="advantage-title">Быстро</span>
+                    <p class="advantage-text">Мы стараемся устанавливать оптимальные для наших заказчиков сроки выполнения</p>
+                </div>
+                <div class="advantage">
+                    <span class="advantage-title">Выгодно</span>
+                    <p class="advantage-text">Расценки на услуги в среднем ниже, чем у других веб-студий нашего уровня</p>
+                </div>
+                <div class="advantage">
+                    <span class="advantage-title">Профессионально</span>
+                    <p class="advantage-text">Опыт в сфере веб-разработки составляет более 7 лет</p>
+                </div>
             </div>
         </div>
     </section>
     <section class="skills-section">
         <div class="container">
             <div class="skills">
-                <h3 class="skills-title">Профессиональные навыки</h3>
+                <h3 class="skills-title">Наши компетенции</h3>
                 <div class="skills-list">
                     <div class="skills-block">
                         <div class="skills-block__item"><img src="img/skills/html.png" alt="html" class="skills__img"></div>
@@ -82,7 +110,7 @@
                 <div class="services-block">
                     <h5 class="services-title">Вёрстка по вашему макету</h5>
                     <p class="services-text">У вас уже есть готовый макет? Мы можем взяться за его реализацию
-                        Вёрстка, покупка домена и перемещение файлов на сервер - полное сопровождение до рабочего продукта</p>
+                      <br>Вёрстка, покупка домена и перемещение файлов на сервер - полное сопровождение до рабочего продукта</p>
                     <h5 class="services-price">от 3990 рублей</h5>
                 </div>
             </div>
@@ -103,8 +131,8 @@
                 <div class="services-block">
                     <h5 class="services-title">Многостраничные сайты</h5>
                     <p class="services-text">Веб-сайты, на которых  несколько страниц, содержание которых чаще всего находится под управлением системы управления контентом.
-                        Разработка таких сайтов обычно дольше, но создаёт более полное понимание клиента о продукте\компании
-                        Сайт будет построен на популярной системе <a href="https://ru.wordpress.org/">wordpress</a></p>
+                        <br>Разработка таких сайтов обычно дольше, но создаёт более полное понимание клиента о продукте\компании
+                    <br>Сайт будет построен на популярной системе <a href="https://ru.wordpress.org/">wordpress</a></p>
                     <h5 class="services-price">от 14990 рублей</h5>
                 </div>
             </div>
@@ -113,7 +141,8 @@
             <div class="services-mirrored">
                 <div class="services-block-mirrored">
                     <h5 class="services-title">Порталы</h5>
-                    <p class="services-text">Ресурсы, на которых можно размещать информацию различного характера. Более продвинутый функционал, чем у многостраничного сайта Агенства недвижимости, новостные сервисы и даже сайты объявлений - это всё порталы</p>
+                    <p class="services-text">Ресурсы, на которых можно размещать информацию различного характера. Более продвинутый функционал, чем у многостраничного сайта 
+                       <br>Агенства недвижимости, новостные сервисы и даже сайты объявлений - это всё порталы</p>
                     <h5 class="services-price">от 36990 рублей</h5>
                 </div>
                 <img src="img/services/i-4.png" alt="" class="services-img">
@@ -151,27 +180,27 @@
                 <h3 class="projects-title">Наши проекты</h3>
                 <div class="projects-list">
                     <div class="projects-list__item">
-                        <img src="img/projects/sorokina-psy.png" alt="" class="projects-list__item-img">
+                        <img src="img/projects/sorokina-psy.jpg" alt="Частный психолог Ирина Сорокина" class="projects-list__item-img">
                         <div class="projects-list__item-block">
-                            <h6 class="projects-list__item-title">Сайт психолога</h6>
-                            <p class="projects-list__item-text">Мышление представляет собой концептуальный конформизм, таким образом, (описание проекта) выгодная отдельному человеку, ведет к коллективному выигрышу.</p>
-                            <a href="https://sorokina-psy.ru" class="projects-list__item-link">Ссылка на сайт</a>
+                            <h6 class="projects-list__item-title">Сайт частного психолога</h6>
+                            <p class="projects-list__item-text">Нашей задачей было сделать многостраничный сайт-блог для частного психолога<br>Выполнено комплексное сопровождение от идеи до конечного результата</p>
+                            <a href="https://sorokina-psy.ru" target="_blank" class="projects-list__item-link">Ссылка на сайт</a>
                         </div>
                     </div>
                     <div class="projects-list__item">
-                        <img src="img/projects/hata-repair.png" alt="" class="projects-list__item-img">
+                        <img src="img/projects/hata-repair.jpg" alt="Ремонт квартир" class="projects-list__item-img">
                         <div class="projects-list__item-block">
-                            <h6 class="projects-list__item-title">Сайт психолога</h6>
-                            <p class="projects-list__item-text">Мышление представляет собой концептуальный конформизм, таким образом, (описание проекта) выгодная отдельному человеку, ведет к коллективному выигрышу.</p>
-                            <a href="#" class="projects-list__item-link">Ссылка на сайт</a>
+                            <h6 class="projects-list__item-title">Сайт строительной компании</h6>
+                            <p class="projects-list__item-text">Заказчик попросил выполнить работу по своему макету. <br>Подключили сборщик заявок с отправкой в Telegram, помогли с выбором хостинга и оформлением домена</p>
+                            <a href="https://nevovich.github.io/hata_repair/dist/" class="projects-list__item-link"  target="_blank">Ссылка на сайт</a>
                         </div>
                     </div>
                     <div class="projects-list__item">
-                        <img src="img/projects/papa-carlo.png" alt="" class="projects-list__item-img">
+                        <img src="img/projects/light_reklam.jpg" alt="Световая реклама" class="projects-list__item-img">
                         <div class="projects-list__item-block">
-                            <h6 class="projects-list__item-title">Сайт психолога</h6>
-                            <p class="projects-list__item-text">Мышление представляет собой концептуальный конформизм, таким образом, (описание проекта) выгодная отдельному человеку, ведет к коллективному выигрышу.</p>
-                            <a href="#" class="projects-list__item-link">Ссылка на сайт</a>
+                            <h6 class="projects-list__item-title">Сайт рекламного агенства</h6>
+                            <p class="projects-list__item-text">Заказчик обратился с собственным макетом <br>Подключили сборщик заявок с отправкой в Telegram, выполнили некоторые просьбы, возникшие в ходе выполнения заказа</p>
+                            <a href="http://proektornk.ru/"  target="_blank" class="projects-list__item-link">Ссылка на сайт</a>
                         </div>
                     </div>
                 </div>
@@ -188,21 +217,15 @@
                         <p class="partners-container__subtitle">Чтобы стать участником партнёрской программы, выполните <b>3 простых шага:</b></p>
                         <ul class="partners-list">
                             <li class="partners-list__item">
-                                <div class="partners-list__item-counter">
-                                    <p class="partners-list__item-counter__num">1</p>
-                                </div>
+                                <span class="partners-list__item-counter">1</span>
                                 <span class="partners-list__item-text">Приведите друга к нам</span>
                             </li>
                             <li class="partners-list__item">
-                                <div class="partners-list__item-counter">
-                                    <p class="partners-list__item-counter__num">2</p>
-                                </div>
+                                <span class="partners-list__item-counter">2</span>
                                 <span class="partners-list__item-text">Заполните форму, открыв её по кнопке ниже</span>
                             </li>
                             <li class="partners-list__item">
-                                <div class="partners-list__item-counter">
-                                    <p class="partners-list__item-counter__num">3</p>
-                                </div>
+                                <span class="partners-list__item-counter">3</span>
                                 <span class="partners-list__item-text">Ждите письмо на свой E-mail с результатами заказа</span>
                             </li>
                         </ul>
@@ -245,24 +268,18 @@
                         <div class="contacts-wrap">
                             <h2 class="contacts-card__title">Хочу сайт по выгодной цене</h2>
                             <p class="contacts-card__subtitle">Заполните поля ниже - мы свяжемся с Вами</p>
-                            <form action="#" class="contacts-form">
+                            <form class="contacts-form">
                                 <div class="contacts-form__input">
-                                    <input type="text">
-                                    <label for="#">Ваше имя</label>
-                                    <span class="focus-border"></span>
+                                    <input type="text" name="user_name" required placeholder="Ваше имя">
                                 </div>
                                 <div class="contacts-form__input">
-                                    <input type="text">
-                                    <label for="#">Номер телефона</label>
-                                    <span class="focus-border"></span>
+                                    <input type="text" name="user_phone" class="phone-validate" required placeholder="Номер телефона">
                                 </div>
                                 <div class="contacts-form__input">
-                                    <input type="text">
-                                    <label for="#">Id в telegram (опционально)</label>
-                                    <span class="focus-border"></span>
+                                    <input type="text" name="user_tg" placeholder="Telegram id (по желанию)">
                                 </div>
+                                <button class="btn secondary-btn modal-btn modal-btn__text" type="submit">Заказать обратный звонок</button>
                             </form>
-                            <button class="btn secondary-btn" type="submit">Заказать обратный звонок</button>
                         </div>
                         <img src="img/contacts/card-img.png" alt="" class="card-img">
                     </div>
@@ -276,7 +293,7 @@
                 <p class="footer-copy">©Nevovich web 2019-2021</p>
                 <div class="footer-nav">
                     <a href="politics.html" class="footer-nav__link">Политика конфиденциальности</a>
-                    <a href="#" class="footer-nav__link">Оферта об услугах</a>
+                    <a href="oferta.html" class="footer-nav__link">Оферта об услугах</a>
                 </div>
                 <div class="footer-contact">
                     <a href="tel:+79048865552"><img src="img/contacts/phone.svg" alt=""></a>
@@ -288,6 +305,9 @@
     <div class="modal fade" id="order-modal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content order-modal">
+                <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+                    <img src="img/modal_close.svg">
+                </button>
                 <div class="modal-body order-modal-body row">
                     <div class="contacts-block modal-block col-xl-6">
                         <h3 class="modal__title">Контактная информация</h3>
@@ -319,25 +339,18 @@
                         <div class="contacts-wrap modal-card-wrap">
                             <h3 class="contacts-card__title modal__title">Оставьте заявку, Мы с вами свяжемся</h3>
                             <p class="contacts-card__subtitle"></p>
-                            <form action="#" class="contacts-form">
+                            <form class="contacts-form">
                                 <div class="contacts-form__input">
-                                    <input type="text">
-                                    <label for="#">Ваше имя</label>
-                                    <span class="focus-border"></span>
+                                    <input type="text" name="user_name" required placeholder="Ваше имя">
                                 </div>
                                 <div class="contacts-form__input">
-                                    <input type="text">
-                                    <label for="#">Номер телефона</label>
-                                    <span class="focus-border"></span>
+                                    <input class="phone-validate" type="text" name="user_phone" required placeholder="Номер телефона">
                                 </div>
                                 <div class="contacts-form__input">
-                                    <input type="text">
-                                    <label for="#">E-mail</label>
-                                    <span class="focus-border"></span>
+                                    <input type="text" name="user_tg" placeholder="Telegram id (по желанию)">
                                 </div>
+                                <button class="btn secondary-btn modal-btn modal-btn__text" type="submit">Заказать обратный звонок</button>
                             </form>
-                            <span>C <a href="politics.html">Политикой конфиденциальности</a> ознакомлен</span>
-                            <button class="btn secondary-btn modal-btn" type="submit"><h6 class="modal-btn__text">Заказать обратный звонок</h6></button>
                         </div>
                     </div>
                 </div>
@@ -347,41 +360,27 @@
     <div class="modal fade" id="partners-modal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog partners-modal modal-lg" role="document">
             <div class="modal-content">
+                <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+                    <img src="img/modal_close.svg">
+                </button>
                 <div class="modal-body partners-modal-body">
                     <h3 class="modal__title">Информация о реферале</h3>
-                    <form action="#" class="contacts-form">
+                    <form action="#" class="contacts-form partner-form">
                         <div class="contacts-form__input">
-                            <input type="text">
-                            <label for="#">Имя реферала</label>
-                            <span class="focus-border"></span>
+                            <input type="text" required name="client_name" placeholder="Имя реферала">
                         </div>
                         <div class="contacts-form__input">
-                            <input type="text">
-                            <label for="#">Id в telegram</label>
-                            <span class="focus-border"></span>
+                            <input type="text" required name="client_phone" placeholder="Id в telegram">
                         </div>
                         <div class="contacts-form__input">
-                            <input type="text">
-                            <label for="#">E-mail реферала (необязательно)</label>
-                            <span class="focus-border"></span>
+                            <input type="text" name="client_email" placeholder="E-mail реферала (необязательно)">
+                        </div>
+                        <h3 class="modal__title contacts-form__title">Информация о партнёре</h3>
+                        <div class="contacts-form__input">
+                            <input type="text" required name="partner_name" placeholder="Ваше имя">
                         </div>
                         <div class="contacts-form__input">
-                            <input type="text">
-                            <label for="#">Ориентировочный заказ</label>
-                            <span class="focus-border"></span>
-                        </div>
-                    </form>
-                    <h3 class="modal__title contacts-form__title">Информация о партнёре</h3>
-                    <form action="#" class="contacts-form">
-                        <div class="contacts-form__input">
-                            <input type="text">
-                            <label for="#">Ваше имя</label>
-                            <span class="focus-border"></span>
-                        </div>
-                        <div class="contacts-form__input">
-                            <input type="text">
-                            <label for="#">E-mail</label>
-                            <span class="focus-border"></span>
+                            <input type="email" name="partner_email" placeholder="E-mail">
                         </div>
                         <button class="btn secondary-btn contacts-form-button modal-btn d-flex">Отправить</button>
                     </form>
@@ -391,6 +390,7 @@
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

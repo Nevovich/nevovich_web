@@ -9,7 +9,8 @@ $tg_ID = $_POST['user_tg'];
 $token = "1485573902:AAFEcnQgzq1BsfFZ0DWfnrBieA05xruykxE";
 $chat_id = "1428292250";
 $arr = array(
-  'Имя посетителя: ' => $name,
+  'Новая заявка от клиента на Nevovichweb!' => " ",
+  'Имя клиента: ' => $name,
   'Его телефон: ' => $phone,
   'Его Telegram ID' => $tg_ID
 );

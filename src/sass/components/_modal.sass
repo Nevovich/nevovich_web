@@ -2,6 +2,8 @@
     &-content
         padding: 30px
         border-radius: 15px
+    &-close
+        display: none
     &-card
         max-width: 355px
         box-shadow: none
@@ -18,10 +20,8 @@
         padding: 4px 16px  
         margin-left: auto !important
         margin-right: auto !important
-        &__text
-            font-size: 16px
-            line-height: 22px
-            margin-bottom: 0px
+        font-size: 16px
+        line-height: 22px
 .order-modal
     position: relative
     &-body
@@ -82,3 +82,17 @@
         margin-bottom: 40px
         &__item
             margin-right: 0px
+@media (max-width: 576px)
+    .modal
+        &-close
+            display: block
+            padding: 4px 8px
+            position: absolute
+            right: 20px
+            top: 20px
+            border: 0
+            background-color: $gray
+            color: $realblack
+            border-radius: 50%
+            & img
+                transform: translateY(-1px)

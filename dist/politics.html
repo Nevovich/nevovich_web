@@ -16,14 +16,21 @@
     <header>
         <div class="container">
             <div class="header">
-                <a href="index.html" class="header-title">Nevovich web</a>
-                <div class="header-nav">
-                    <a href="index.html#services-section" class="header-nav__link">Услуги</a>
-                    <a href="index.html#projects-section" class="header-nav__link">Портфолио</a>
-                    <a href="index.html#partners-section" class="header-nav__link">Партнёрская программа</a>
-                    <a href="index.html#contacts-section" class="header-nav__link">Контакты</a>
-                </div>
-                <button class="btn header-button secondary-btn" data-toggle="modal" data-target="#order-modal">Заказать сайт</button>
+                <nav class="navbar navbar-expand-lg justify-content-between">
+                    <a href="/" class="header-title">nevovich<span>web</span></a>
+                    <button id="header-navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <img style="height: 30px;width:30px;" src="img/menu-icon.svg" alt="menu-icon">
+                    </button>
+                        <div class="collapse navbar-collapse" id="headerNavbar">
+                            <div class="header-nav">
+                                <a href="#services-section" class="header-nav__link">Услуги</a>
+                                <a href="#projects-section" class="header-nav__link">Портфолио</a>
+                                <a href="#partners-section" class="header-nav__link">Партнёрская программа</a>
+                                <a href="#contacts-section" class="header-nav__link">Контакты</a>
+                            </div>
+                            <button class="btn header-button secondary-btn" data-toggle="modal" data-target="#order-modal">Заказать сайт</button>
+                        </div>
+                </nav>
             </div>
         </div>
     </header>
@@ -115,6 +122,9 @@
     <div class="modal fade" id="order-modal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content order-modal">
+                <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+                    <img src="img/modal_close.svg">
+                </button>
                 <div class="modal-body order-modal-body row">
                     <div class="contacts-block modal-block col-xl-6">
                         <h3 class="modal__title">Контактная информация</h3>
@@ -146,33 +156,58 @@
                         <div class="contacts-wrap modal-card-wrap">
                             <h3 class="contacts-card__title modal__title">Оставьте заявку, Мы с вами свяжемся</h3>
                             <p class="contacts-card__subtitle"></p>
-                            <form action="#" class="contacts-form">
+                            <form class="contacts-form">
                                 <div class="contacts-form__input">
-                                    <input type="text">
-                                    <label for="#">Ваше имя</label>
-                                    <span class="focus-border"></span>
+                                    <input type="text" name="user_name" required placeholder="Ваше имя">
                                 </div>
                                 <div class="contacts-form__input">
-                                    <input type="text">
-                                    <label for="#">Номер телефона</label>
-                                    <span class="focus-border"></span>
+                                    <input class="phone-validate" type="text" name="user_phone" required placeholder="Номер телефона">
                                 </div>
                                 <div class="contacts-form__input">
-                                    <input type="text">
-                                    <label for="#">E-mail</label>
-                                    <span class="focus-border"></span>
+                                    <input type="text" name="user_tg" placeholder="Telegram id (по желанию)">
                                 </div>
+                                <button class="btn secondary-btn modal-btn modal-btn__text" type="submit">Заказать обратный звонок</button>
                             </form>
-                            <a href="politics.html" class="modal-link">Политика конфиденциальности</a>
-                            <button class="btn secondary-btn modal-btn" type="submit"><h6 class="modal-btn__text">Заказать обратный звонок</h6></button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="partners-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog partners-modal modal-lg" role="document">
+            <div class="modal-content">
+                <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+                    <img src="img/modal_close.svg">
+                </button>
+                <div class="modal-body partners-modal-body">
+                    <h3 class="modal__title">Информация о реферале</h3>
+                    <form action="#" class="contacts-form partner-form">
+                        <div class="contacts-form__input">
+                            <input type="text" required name="client_name" placeholder="Имя реферала">
+                        </div>
+                        <div class="contacts-form__input">
+                            <input type="text" required name="client_phone" placeholder="Id в telegram">
+                        </div>
+                        <div class="contacts-form__input">
+                            <input type="text" name="client_email" placeholder="E-mail реферала (необязательно)">
+                        </div>
+                        <h3 class="modal__title contacts-form__title">Информация о партнёре</h3>
+                        <div class="contacts-form__input">
+                            <input type="text" required name="partner_name" placeholder="Ваше имя">
+                        </div>
+                        <div class="contacts-form__input">
+                            <input type="email" name="partner_email" placeholder="E-mail">
+                        </div>
+                        <button class="btn secondary-btn contacts-form-button modal-btn d-flex">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/main.js"></script>
-    </body>
+</body>
 </html>

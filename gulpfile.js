@@ -24,7 +24,8 @@ let path = {
 let {src, dest, gulp, series} = require('gulp');
 let del = require('del');
 let uglify = require('gulp-uglify');
-var tinypng = require('gulp-tinypng-compress');
+let tinypng = require('gulp-tinypng-compress');
+let ftp = require('vinyl-ftp');
 
 
 
@@ -75,6 +76,19 @@ function defaultTask() {
 
     // cb();
 }
-  
+
+function deploy(done) {
+    var conn = ftp.create({
+    host:      '185.137.235.119',
+    user:      'sorokina',
+    password:  'Qf2KfLZ7',
+    // log: gutil.log
+});
+let globs = [ 'dist/**']
+    return src(globs, {buffer: false})
+    .pipe(conn.dest('/www/nevovichweb.ru/'));
+    done();
+};  
 // exports.default = defaultTask
 exports.default = series(cleanDist, html, moveCss, minifyJs, moveMinifiedJs, moveFonts, imageMinify, moveSVG);
+exports.deploy = deploy;

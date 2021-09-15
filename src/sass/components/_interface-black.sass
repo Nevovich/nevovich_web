@@ -3,22 +3,23 @@ $primarylight: #ffe54c
 $primarydark: #c68400
 $secondary: #673ab7
 $secondarylight: #9a67ea
-$secondarydark: #320b86
-$black: #303030
-$gray: #eee
-$white: #fff
-$realblack: #000
-$titleFontColor: #212529
+$secondarydark: #673ebf
+$black: #eee
+$gray: #303030
+$white: #000
+$realblack: #fff
+$titleFontColor: #dfdfdf
 
 
 
 // ещё подумай, как ввести в переменные тени: там везде чёрный с разной резкостью, предлагаю два варианта:
-$darkshadow: rgba(0,0,0,0.25)
-$lightshadow: rgba(0,0,0,0.12)
+$darkshadow: rgba(255,255,255,0.25)
+$lightshadow: rgba(255,255,255,0.12)
 // если есть ещё какие-то тени, меняй их нахуй на эти две, чтоб не было разнобоя
 
 body
     background-color: $white
+    color: $titleFontColor
 
 h1, h2, h3, h4, h5, h6
     font-family: 'Gilroy'
@@ -56,29 +57,41 @@ h3
     line-height: 22px
     border-radius: 8px
     padding: 5px 20px
-    -webkit-box-shadow: 1px 2px 10px 0px rgba(50, 50, 50, 0.3)
-    -moz-box-shadow:    1px 2px 10px 0px rgba(50, 50, 50, 0.3)
-    box-shadow:         1px 2px 10px 0px rgba(50, 50, 50, 0.3)
+    -webkit-box-shadow: 1px 2px 10px 0px rgba(205, 205, 205, 0.3)
+    -moz-box-shadow:    1px 2px 10px 0px rgba(205, 205, 205, 0.3)
+    box-shadow:         1px 2px 10px 0px rgba(205, 205, 205, 0.3)
     &:hover
         background-color: $white
         color: $black
 .secondary-btn
     background-color: $secondary
-    color: $white
+    color: $black
     font-weight: bold
     font-family: 'Gilroy'
     font-size: 18px
     line-height: 22px
     border-radius: 8px
     padding: 5px 20px
-    -webkit-box-shadow: 1px 2px 10px 0px rgba(50, 50, 50, 0.3)
-    -moz-box-shadow:    1px 2px 10px 0px rgba(50, 50, 50, 0.3)
-    box-shadow:         1px 2px 10px 0px rgba(50, 50, 50, 0.3)
+    -webkit-box-shadow: 1px 2px 10px 0px rgba(205, 205, 205, 0.3)
+    -moz-box-shadow:    1px 2px 10px 0px rgba(205, 205, 205, 0.3)
+    box-shadow:         1px 2px 10px 0px rgba(205, 205, 205, 0.3)
     &:hover
-        background-color: $white
-        color: $secondary
+        background-color: $primarylight
+        color: $white
 @media (max-width: 768px)
     h3
         text-align: center
         font-size: 25px
         margin-bottom: 30px
+.skills-block__item, .contacts-card
+    background-color: #eeeeee1a !important
+.hero-btn
+    background-color: #303030 !important
+    &:hover
+        background-color: $black !important
+.footer
+    &-copy
+        color: $black !important
+.order-modal
+    &::after
+        color: $black !important

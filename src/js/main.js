@@ -11,7 +11,6 @@ $(function(){
     // Phone validation
     $(".phone-validate").mask("+7 (999) 999-99-99");
 
-
     // AJAX form sender
     $('.contacts-form').not('.partner-form').on('submit', function(event) {
         event.preventDefault();
@@ -40,4 +39,22 @@ $(function(){
         });
         $(this).closest('.modal').modal('hide');
     });
+
+    // Dark mode
+    if (window.matchMedia("prefers-color-scheme: dark").matches) {
+      document.getElementById('theme-css').setAttribute('href', 'css/main-black.min.css');
+    } else {
+      document.getElementById('theme-css').setAttribute('href', 'css/main.min.css')
+    }
+    if (document.getElementById('theme-css').getAttribute('href') == 'css/main-black.min.css') {
+    let allIMG = document.querySelectorAll(`.steps-list__item-img img`);
+        allIMG.forEach( function(el) {
+          let srcOfAllImg = String(el.src);
+          let lastLetter = srcOfAllImg.slice(-4);
+          let modifiedBlack = srcOfAllImg.substring(0, srcOfAllImg.length - 4) + "-black" + lastLetter;
+          el.src = modifiedBlack;
+          // console.log(el.src);
+        });
+        document.querySelector('.hero-img').setAttribute('src', 'img/hero/hero-img-black.svg');
+    };
 });
